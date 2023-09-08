@@ -59,6 +59,10 @@ button {
   color: white;
 }
 
+.header-top-strip a {
+  color: var(--primary1);
+}
+
 .input-group button {
   background: transparent;
   font-size: 14px;
@@ -83,11 +87,10 @@ input:focus {
 
 .nav-links a {
   font-size: 16px;
-  text-transform: uppercase;
-  color: var(--primary1);
+
+  text-decoration: none;
 }
 
-.nav-links-nav,
 .social-icons a {
   color: var(--search);
 }
@@ -176,12 +179,14 @@ input:focus {
 }
 
 .active {
-  color: var(--primary);
+  font-weight: 600;
   text-decoration: underline;
+  color: var(--primary);
 }
 
-.not-active {
+.inactive {
   color: var(--primary1);
+  font-weight: 400;
 }
 
 #color-link {
@@ -527,6 +532,9 @@ footer .socials {
   margin: 0 10px;
 }
 
+.footer-detail a {
+  color: var(--primary);
+}
 #footer-link {
   font-size: 18px;
   margin: 0 10px;

@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
+import google from "../assets/images/pay/play.jpg";
+import app from "../assets/images/pay/app.jpg";
+import pay from "../assets/images/pay/pay.png";
 
 const Footer = () => {
   return (
@@ -10,7 +13,7 @@ const Footer = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-4 d-flex flex-column">
-              <h3 className="mb-5">Contact us</h3>
+              <h3 className="mb-4">Contact us</h3>
               <div className="footer-details">
                 <p className="mb-3">
                   <b>Address:</b> Thika town,Naltex building, 2nd floor
@@ -41,16 +44,56 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+            <div className="col-2">
+              <h3 className="mb-4">About</h3>
+              <div className="footer-details d-flex flex-column">
+                <Link className="mb-3">About Us</Link>
+                <Link className="mb-3">Delivery</Link>
+                <Link className="mb-3">Privacy Policy</Link>
+                <Link className="mb-3">Tax Policy</Link>
+                <Link className="mb-3">Fee Policy</Link>
+                <Link className="mb-3">Terms & Conditions</Link>
+              </div>
+            </div>
+            <div className="col-2">
+              <h3 className="mb-4">Account</h3>
+              <div className="footer-details d-flex flex-column">
+                <Link className="mb-3">Profile</Link>
+                <Link className="mb-3">View Cart</Link>
+                <Link className="mb-3">My Orders</Link>
+                <Link className="mb-3">My Wishlist</Link>
+                <Link className="mb-3">Help</Link>
+                <Link className="mb-3">Coupons</Link>
+              </div>
+            </div>
+            <div className="col-4">
+              <h3 className="mb-3">Install App</h3>
+              <div className="footer-details">
+                <p>Available On Google Play Services & App Store</p>
+                <div className="pay">
+                  <Link>
+                    <img src={google} alt="" className="img-fluid p-4 my-3" />
+                  </Link>
+                  <Link>
+                    <img src={app} alt="" className="img-fluid p-4 my-3" />
+                  </Link>
+                </div>
+                <p className="mb-3">Payment Metgods</p>
+                <Link className="pay">
+                  <img src={pay} alt="" className="img-fluid p-3 " />
+                </Link>
+              </div>
+            </div>
           </div>
           <hr />
-          <div className="row">
-            <div className="col-9">
+          <div className="row d-flex justify-content-between">
+            <div className="col-3">
               <p>&copy; Developed by Eclar Developers 2023</p>
             </div>
-            <div className="col-3 d-flex justify-content-between">
-              <Link>Privacy Policy</Link>
-              <Link>Terms of Use</Link>
-              <Link>Contact Me</Link>
+            <div className="col-3 d-flex justify-content-around ">
+              <Link className="text-black">Privacy Policy</Link>
+              <Link className="text-black">Terms of Use</Link>
+              <Link className="text-black">Contact Me</Link>
             </div>
           </div>
         </div>
