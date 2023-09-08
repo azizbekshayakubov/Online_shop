@@ -51,12 +51,8 @@ a:hover {
 }
 
 p {
-  text-decoration: none;
   font-size: 14px;
-  font-weight: 400;
   margin: auto;
-  color: var(--primary1);
-  margin: 10px;
 }
 
 button {
