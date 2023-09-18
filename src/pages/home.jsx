@@ -30,11 +30,7 @@ const Home = () => {
               <h1>Our Featured Products</h1>
               <p>All Weather Modern Designs</p>
             </div>
-            <div className="d-flex justify-content-around">
-              <div className="col-4">
-                <FeaturedProducts />
-              </div>
-            </div>
+            <FeaturedProducts />
           </div>
         </div>
       </section>
