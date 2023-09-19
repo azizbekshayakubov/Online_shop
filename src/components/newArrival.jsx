@@ -1,11 +1,11 @@
 /* eslint-disable react/jsx-key */
-import { PRODUCTS } from "./products";
+import { PRODUCTS1 } from "./products";
 
-const FeaturedProducts = () => {
+const NewArrival = () => {
   return (
     <>
       <div className="row my-4">
-        {PRODUCTS.slice(2, 6).map((product) => (
+        {PRODUCTS1.slice(1, 5).map((product) => (
           <div className="col-3">
             <div key={product.id}>
               <div className="card h-100 m-auto p-2">
@@ -36,4 +36,4 @@ const FeaturedProducts = () => {
   );
 };
 
-export default FeaturedProducts;
+export default NewArrival;

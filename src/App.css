@@ -319,6 +319,10 @@ input:focus {
   overflow: hidden;
 }
 
+.featured-products .card span {
+  color: var(--dark);
+}
+
 .featured-products .card img {
   border-radius: 20px;
   max-width: 100%;
@@ -439,6 +443,37 @@ input:focus {
 .repair-details button:hover {
   border: 1px solid var(--darken);
   background-color: transparent;
+}
+
+.button-repair {
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 12px 24px;
+  background-color: var(--darken);
+  color: white;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+.button-repair:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid var(--primary1);
+}
+
+.new-products .card img {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 220px;
+}
+
+.new-products .card {
+  border-radius: 20px;
+  max-width: 250px;
+}
+
+.new-products .card span {
+  color: var(--darken);
 }
 
 .new-arrivals button {

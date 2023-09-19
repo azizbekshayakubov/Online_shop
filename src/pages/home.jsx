@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import Hero from "../components/hero";
 import FeaturedProducts from "../components/featuredProducts";
+import NewArrival from "../components/newArrival";
 
 const Home = () => {
   return (
     <>
-      <section className="banner">
+      <section className="banner mb-3">
         <div className="container-xxl">
           <div className="row">
             <div className="banner-details p-5 d-flex flex-column align-items-start justify-content-center">
@@ -31,6 +32,38 @@ const Home = () => {
               <p>All Weather Modern Designs</p>
             </div>
             <FeaturedProducts />
+          </div>
+        </div>
+      </section>
+
+      <section className="repair">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="repair-details d-flex flex-column text-center align-items-center p-3">
+              <span className="text-white mt-1">Repair Services</span>
+              <h2 className="text-white">
+                On{" "}
+                <span className="text-success">
+                  <b>70%</b>
+                </span>
+                Off on All Products And Accessories
+              </h2>
+              <div className="mt-3">
+                <button className="button-repair">Explore Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="new-products">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="text-center">
+              <h1>New Arrivals</h1>
+              <p>Your Best Designer Outfits</p>
+            </div>
+            <NewArrival />
           </div>
         </div>
       </section>
