@@ -157,7 +157,7 @@ export const PRODUCTS1 = [
   {
     id: 16,
     image: img1,
-    name: "Slim Fit Dress Shirt",
+    name: "Slim Fit Dress",
     price: 49.9,
     brand: "Calvin Klein",
     status: "in stock",
@@ -166,7 +166,7 @@ export const PRODUCTS1 = [
   {
     id: 17,
     image: img2,
-    name: "Men's Dri-FIT T-Shirt",
+    name: "Men's Dri-FIT",
     price: 24.9,
     brand: "Nike",
     status: "in stock",
@@ -184,7 +184,7 @@ export const PRODUCTS1 = [
   {
     id: 19,
     image: img4,
-    name: "Men's 1950s Sportswear T-Shirt",
+    name: "Men's 1950s Sportswear",
     price: 49.9,
     brand: "Levi s",
     status: "out of stock",

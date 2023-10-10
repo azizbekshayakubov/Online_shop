@@ -464,7 +464,7 @@ input:focus {
 .new-products .card img {
   border-radius: 20px;
   width: 100%;
-  max-width: 220px;
+  max-height: 257px;
 }
 
 .new-products .card {
@@ -476,19 +476,19 @@ input:focus {
   color: var(--darken);
 }
 
-.new-arrivals button {
-  position: absolute;
-  right: 10px;
-  bottom: 20px;
-  font-size: 18px;
-  border-radius: 100px;
-  width: 40px;
-  height: 40px;
-  align-items: center;
-  transition: 0.5s ease;
-  line-height: 0px;
-}
-
+/* .new-arrivals button {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    font-size: 18px;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    transition: 0.5s ease;
+    line-height: 0px;
+  } */
+/* 
 .new-arrivals button:hover {
   background-color: var(--light);
 }
@@ -505,7 +505,40 @@ input:focus {
 
 .new-arrivals .card:hover {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
+} */
+
+.button-deals {
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px 8px;
+  background-color: var(--darker);
+  color: white;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
 }
+
+.button-deals:hover {
+  background-color: transparent;
+  color: var(--search);
+  border: 1px solid var(--darker);
+}
+
+.button-blog {
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px 8px;
+  background-color: transparent;
+  color: var(--primary1);
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+.button-blog:hover {
+  background-color: transparent;
+  color: var(--search);
+  border: 1px solid var(--darker);
+}
+
 .hot-deals .card {
   padding: 12px 10px;
 }

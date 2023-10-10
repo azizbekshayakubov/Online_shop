@@ -12,6 +12,15 @@ const Footer = () => {
       <footer className="footer p-5">
         <div className="container-xxl">
           <div className="row">
+            <div className="col-12">
+              <div className="col-6 text-center mb-3">
+                <h3>Sign Up for a newsletter</h3>
+                <p>
+                  Get email updates on all our <Link>Special offers</Link>{" "}
+                </p>
+              </div>
+            </div>
+            <hr className="m-2" />
             <div className="col-4 d-flex flex-column">
               <h3 className="mb-4">Contact us</h3>
               <div className="footer-details">
@@ -70,7 +79,7 @@ const Footer = () => {
               <h3 className="mb-3">Install App</h3>
               <div className="footer-details">
                 <p>Available On Google Play Services & App Store</p>
-                <div className="pay">
+                <div className="pays">
                   <Link>
                     <img src={google} alt="" className="img-fluid p-4 my-3" />
                   </Link>
