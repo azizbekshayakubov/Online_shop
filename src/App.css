@@ -464,7 +464,11 @@ input:focus {
 .new-products .card img {
   border-radius: 20px;
   width: 100%;
+<<<<<<< HEAD
   max-height: 257px;
+=======
+  max-height: 230px;
+>>>>>>> bde969e7dad310c763e6b8d885ade3cb58e2c2f6
 }
 
 .new-products .card {

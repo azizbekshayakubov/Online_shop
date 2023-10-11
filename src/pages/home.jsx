@@ -71,6 +71,7 @@ const Home = () => {
         </div>
       </section>
 
+<<<<<<< HEAD
       <section className="deals p-5">
         <div className="container-xxl">
           <div className="row">
@@ -135,6 +136,10 @@ const Home = () => {
             <Blogs />
           </div>
         </div>
+=======
+      <section>
+        
+>>>>>>> bde969e7dad310c763e6b8d885ade3cb58e2c2f6
       </section>
     </>
   );

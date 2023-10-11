@@ -166,7 +166,11 @@ export const PRODUCTS1 = [
   {
     id: 17,
     image: img2,
+<<<<<<< HEAD
     name: "Men's Dri-FIT",
+=======
+    name: "Men's Dri-FIT ",
+>>>>>>> bde969e7dad310c763e6b8d885ade3cb58e2c2f6
     price: 24.9,
     brand: "Nike",
     status: "in stock",
@@ -184,7 +188,11 @@ export const PRODUCTS1 = [
   {
     id: 19,
     image: img4,
+<<<<<<< HEAD
     name: "Men's 1950s Sportswear",
+=======
+    name: "Men's 1950s Sportswear ",
+>>>>>>> bde969e7dad310c763e6b8d885ade3cb58e2c2f6
     price: 49.9,
     brand: "Levi s",
     status: "out of stock",
@@ -193,7 +201,7 @@ export const PRODUCTS1 = [
   {
     id: 20,
     image: img5,
-    name: "Men's Tech 2.0 Short Sleeve T-Shirt",
+    name: "Men's Tech 2.0 Short Sleeve",
     price: 49.9,
     brand: "Under Armour",
     status: "out of stock",
