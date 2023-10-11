@@ -12,15 +12,29 @@ const Footer = () => {
       <footer className="footer p-5">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-12">
-              <div className="col-6 text-center mb-3">
+            <div className="col-12 d-flex">
+              <div className="col-8 text-center mb-3">
                 <h3>Sign Up for a newsletter</h3>
                 <p>
                   Get email updates on all our <Link>Special offers</Link>{" "}
                 </p>
               </div>
+              <div className="col-4">
+                <div className="input-group mb-3 text-center">
+                  <input
+                    type="text"
+                    className="form-control p-2"
+                    placeholder="Enter Email here"
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2"
+                  />
+                  <button className="input-group-text" id="basic-addon2">
+                    Subscribe
+                  </button>
+                </div>
+              </div>
             </div>
-            <hr className="m-2" />
+            <hr className="m-3" />
             <div className="col-4 d-flex flex-column">
               <h3 className="mb-4">Contact us</h3>
               <div className="footer-details">
@@ -79,13 +93,17 @@ const Footer = () => {
               <h3 className="mb-3">Install App</h3>
               <div className="footer-details">
                 <p>Available On Google Play Services & App Store</p>
-                <div className="pays">
-                  <Link>
-                    <img src={google} alt="" className="img-fluid p-4 my-3" />
-                  </Link>
-                  <Link>
-                    <img src={app} alt="" className="img-fluid p-4 my-3" />
-                  </Link>
+                <div className="pay d-flex">
+                  <div className="mx-2">
+                    <Link>
+                      <img src={google} alt="" className="img-fluid p-4 my-3" />
+                    </Link>
+                  </div>
+                  <div>
+                    <Link>
+                      <img src={app} alt="" className="img-fluid p-4 my-3" />
+                    </Link>
+                  </div>
                 </div>
                 <p className="mb-3">Payment Metgods</p>
                 <Link className="pay">
