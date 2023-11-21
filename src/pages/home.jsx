@@ -39,7 +39,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="repair">
+      <section className="repair p-2">
         <div className="container-xxl">
           <div className="row">
             <div className="repair-details d-flex flex-column text-center align-items-center p-3">
