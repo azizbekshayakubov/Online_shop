@@ -752,6 +752,10 @@ footer .footer-tel:hover {
 
 input {
   padding: 12px;
+  width: 50px;
+  color: #ff6000;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .cart-item img {
@@ -766,6 +770,18 @@ thead {
 
 tbody {
   background: var (var(--lighter2));
+}
+
+.cart-item button {
+  background: transparent;
+  padding: 10px;
+  border: 1px solid;
+  color: black;
+  font-size: 14px;
+}
+
+.input-group button {
+  border: 1px solid var(--lighter);
 }
 
 /* cart end */

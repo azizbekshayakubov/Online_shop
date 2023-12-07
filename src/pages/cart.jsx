@@ -2,9 +2,11 @@ import { PRODUCTS, PRODUCTS1 } from "../components/products";
 import Cartitems from "../components/cartitems";
 import { useContext } from "react";
 import { ShopContext } from "../components/shopcontext";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
-  const { viewProductDetails, addToCart, cartItems } = useContext(ShopContext);
+  const { getTotalCartAmount, ClearCart, cartItems } = useContext(ShopContext);
+  const TotalAmount = getTotalCartAmount();
   return (
     <>
       <section className="cart-item p-5">
@@ -23,7 +25,22 @@ const Cart = () => {
                   return <Cartitems key={product.id} data={product} />;
                 }
               })}
+              <div className="mb-3">
+                <Link onClick={() => ClearCart(id)}>Clear cart</Link>
+              </div>
             </table>
+          </div>
+        </div>
+        <hr />
+
+        <div className="mt-4 p-3 cart-total d-flex justify-content-between">
+          <div>
+            <button>Continue Shopping</button>
+          </div>
+          <div>
+            <h3>Total</h3>
+            <p className="price">${TotalAmount}</p>
+            <button>Check Out</button>
           </div>
         </div>
       </section>

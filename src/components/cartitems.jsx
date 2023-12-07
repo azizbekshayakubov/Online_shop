@@ -14,17 +14,28 @@ const Cartitems = (props) => {
     <>
       <tbody key={id}>
         <tr>
-          <td className="col-3">
-            <img src={image} alt="" className="img-fluid" />
+          <td>
+            <div className="p-2">
+              <img src={image} alt="" className="img-fluid" />
+            </div>
           </td>
-          <td className="col-3">
-            <p>{brand}</p>
-            <p>{name}</p>
-            <p>{price}</p>
+          <td>
+            <p>
+              Product Brand: <span className="price">{brand}</span>
+            </p>
+            <p>
+              Product Name: <h5 className="price">{name}</h5>
+            </p>
+            <p>
+              Product Price: <span className="price">{price}</span>
+            </p>
+            <p>
+              Items In Stock: <span className="text-danger">1000</span>
+            </p>
           </td>
           <td>
             <button
-              className="add-btn"
+              className="add-btn mx-2"
               onClick={() => {
                 addToCart(id);
               }}
@@ -37,7 +48,7 @@ const Cartitems = (props) => {
               onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
             />
             <button
-              className="add-btn"
+              className="add-btn mx-2"
               onClick={() => {
                 removeToCart(id);
                 event.target.classlist.toggle("red");
@@ -56,13 +67,13 @@ const Cartitems = (props) => {
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
               />
-              <span className="input-group-text" id="basic-addon2">
+              <button className="input-group-text" id="basic-addon2">
                 Search
-              </span>
+              </button>
             </div>
           </td>
         </tr>
-        <div className="mb-2"></div>
+        <div className="mb-3"></div>
       </tbody>
     </>
   );
