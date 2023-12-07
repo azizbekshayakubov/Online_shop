@@ -1,14 +1,17 @@
 import { Link, useLocation } from "react-router-dom";
-
+import { useContext } from "react";
 import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import logo from "../assets/images/apneck.png";
 import { HiOutlineInboxIn } from "react-icons/hi";
 import { VscAccount } from "react-icons/vsc";
 import { CgShoppingCart } from "react-icons/cg";
+import { ShopContext } from "./shopcontext";
 
 const Header = () => {
   const location = useLocation();
+  const { getTotalCartProducts } = useContext(ShopContext);
+  const totalProducts = getTotalCartProducts();
 
   return (
     <>
@@ -136,7 +139,12 @@ const Header = () => {
                   <span>
                     <CgShoppingCart className="fs-3 mx-2" />
                   </span>
-                  <p>Cart</p>
+                  <p>
+                    Cart{" "}
+                    <span className="text-danger">
+                      {totalProducts > 0 && `(${totalProducts})`}
+                    </span>
+                  </p>
                 </div>
               </Link>
             </div>
