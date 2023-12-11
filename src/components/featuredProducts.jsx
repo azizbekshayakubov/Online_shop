@@ -4,7 +4,7 @@ import { PRODUCTS } from "./products";
 const FeaturedProducts = () => {
   return (
     <>
-      <div className="row my-4">
+      <div className="row mt-4">
         {PRODUCTS.slice(2, 6).map((product) => (
           <div className="col-3">
             <div key={product.id}>
