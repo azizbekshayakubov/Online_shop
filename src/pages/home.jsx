@@ -19,7 +19,9 @@ const Home = () => {
               <h1>Super Value Deals</h1>
               <h2>On all products</h2>
               <p className="p-3 text-black m-0">Save more with Apneck</p>
-              <Link className="button-link mb-3">Shop Now</Link>
+              <Link to={"/shop"} className="button-link mb-3">
+                Shop Now
+              </Link>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import blog1 from "../assets/images/blog/blog-1.jpg";
 import blog2 from "../assets/images/blog/blog-2.jpg";
 import blog3 from "../assets/images/blog/blog-3.jpg";
 import blog4 from "../assets/images/blog/blog-4.jpg";
+import { Link } from "react-router-dom";
 
 const Blogs = () => {
   return (
@@ -15,7 +16,9 @@ const Blogs = () => {
               bulk of the cards content.
             </p>
 
-            <button className="button-blog">Learn More</button>
+            <Link to={"/blog"}>
+              <button className="button-blog">Learn More</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -28,7 +31,9 @@ const Blogs = () => {
               bulk of the cards content.
             </p>
 
-            <button className="button-blog">Learn More</button>
+            <Link to={"/blog"}>
+              <button className="button-blog">Learn More</button>
+            </Link>
           </div>
         </div>
       </div>
